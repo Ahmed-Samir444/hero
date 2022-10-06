@@ -132,7 +132,29 @@ header .nav-list > li > a.active,
 header .nav-list > li > a:hover{
     color: var(--s-c);
 }
-
+/* ---------------------------------------------------------------------------------------------------- */
+/* landing */
+.landing{
+    background-color: var(--t-c);
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.landing .landing-content {
+    width: 40%;
+    
+}
+.landing .landing-content img{
+    width: 40%;
+    padding-bottom: 30px;
+}
+@media(max-width: 767px) {
+    .landing .landing-content img{
+        width: 50%;
+    }
+}
 
 
 
