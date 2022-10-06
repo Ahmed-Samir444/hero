@@ -1,24 +1,11 @@
-let btn = document.getElementById('btn')
+// get toggle
+let toggle = document.querySelector('.toggle')
 
-// show btn
-window.onscroll = function () {
-    if (window.scrollY >= 500) {
-        btn.style.display = 'block'
-    } else {
-        btn.style.display = 'none'
-    }
-}
+// get nav-list
+let navlist = document.querySelector('.nav-list')
 
-// move to up 
-btn.onclick = function () {
-    window.scrollTo({
-        top: 0,
-        behavior: "smooth"
-    })
-}
-
-
-
-
-
+// show the nav 
+toggle.addEventListener('click', function () {
+    navlist.style.display = 'block'
+})
 
