@@ -102,12 +102,30 @@ header .nav-list{
     display: flex;
 }
 
+@media(max-width: 767px){
+    header .nav-list{
+        flex-direction: column;
+        position: absolute;
+        top: 68px;
+        left: 0;
+        width: 100%;
+        background-color: var(--t-c);
+        display: none;
+     }
+}
+
 header .nav-list > li > a{
     padding: 40px 15px;
     display: block;
     color: var(--f-c);
     font-size: 18px;
     transition: 0.3s;
+}
+
+@media(max-width: 767px){
+     header .nav-list > li > a{
+        padding: 8px 15px;
+     }
 }
 
 header .nav-list > li > a.active,
