@@ -51,6 +51,9 @@ small , span{
 h1 , h2 , h3 , h4 , h5 , h6 , p{
     text-transform: capitalize;
 }
+span{
+    display: inline;
+}
 :root{
     --m-c:#0EA2BDCE;
     --s-c: #0EA2BD;
@@ -109,7 +112,7 @@ header .nav-list{
         top: 30px;
         left: 0;
         width: 100%;
-        height: 100%;
+        height: calc(100% + 160px);
         background-color: var(--t-c);
         transform: translateX(-1000%);
         z-index: 9999;
@@ -158,31 +161,105 @@ header .nav-list > li > a:hover{
 /* ---------------------------------------------------------------------------------------------------- */
 /* landing */
 .landing{
-    background-color: var(--t-c);
-    min-height: 100vh;
     position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background-image: url(../img/hero-bg.png);
+    background-size: cover;
 }
-.landing .landing-content {
-    width: 40%;
-    
+.landing  .landing-content{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    width: 75%;
 }
-.landing .landing-content img{
-    width: 40%;
-    padding-bottom: 30px;
-}
-@media(max-width: 767px) {
-    .landing .landing-content img{
-        width: 50%;
+
+@media (max-width: 767px) {
+    .landing  .landing-content{
+        top: 50%;
     }
 }
 
+.landing .landing-img {
+    width: 400px;
+    margin: 30px auto;
+}
+@media (max-width: 767px) {
+    .landing .landing-img{
+        display: none;
+    }
+}
+.landing .landing-img img{
+    position: relative;
+    max-width: 80%;
+    animation: up-down 5s linear infinite;
+}
 
+.landing .landing-content .landing-info{
+    width: 900px;
+    text-align: center;
+}
 
+@media (max-width: 767px) {
+    .landing .landing-content .landing-info {
+        width: 250px;
+    }
+}
 
+.landing .landing-content .landing-info .landing-title{
+    font-size: 30px;
+    color: var(--f-c);
+    padding-bottom: 20px;
+}
 
+@media (max-width: 767px) {
+    .landing .landing-content .landing-info .landing-title{
+        font-size: 20px;
+    }
+}
+
+.landing .landing-content .landing-info .landing-title span {
+    color: var(--s-c);
+}
+
+.landing .landing-content .landing-info .landing-desc{
+    font-size: 18px;
+    color: var(--f-c);
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+@media (max-width: 767px) {
+    .landing .landing-content .landing-info .landing-desc{
+        font-size: 12px;
+        line-height: 15px;
+    }
+}
+.landing .landing-content .landing-info .landing-btn{
+    width: 140px;
+    height: 40px;
+    background-color: var(--m-c);
+    color: #fff;
+    border: none;
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 6px;
+}
+
+.landing .landing-content .landing-info .landing-btn:hover{
+    background-color: var(--s-c);
+}
+
+/* animation */
+@keyframes up-down {
+    0%, 100%{
+        top: 0;
+    }
+    50%{
+        top: -50px;
+    }
+}
 
 
 
