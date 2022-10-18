@@ -158,6 +158,28 @@ header .nav-list > li > a.active,
 header .nav-list > li > a:hover{
     color: var(--s-c);
 }
+
+/* maga-meno */
+.maga-meno{
+    position: absolute;
+    width: fit-content;
+    background-color: var(--f-c);
+    top: 70px;
+    width: 200px;
+  }
+.maga-meno ul li a{
+    color: var(--m-c);
+    display: block;
+    padding: 10px 35px;
+    transition: 0.3s;
+}
+.maga-meno ul li a:hover {
+      background-color: var(--s-c);
+      color: #fff;
+}
+
+
+
 /* ---------------------------------------------------------------------------------------------------- */
 /* landing */
 .landing{
@@ -187,7 +209,9 @@ header .nav-list > li > a:hover{
 }
 @media (max-width: 767px) {
     .landing .landing-img{
-        display: none;
+        /* display: none; */
+        width: 160px;
+        top: 10px;
     }
 }
 .landing .landing-img img{
@@ -233,6 +257,7 @@ header .nav-list > li > a:hover{
     .landing .landing-content .landing-info .landing-desc{
         font-size: 12px;
         line-height: 15px;
+        margin: 0;
     }
 }
 .landing .landing-content .landing-info .landing-btn{
