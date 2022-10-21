@@ -17,3 +17,24 @@ closer.addEventListener('click', function () {
     this.parentElement.classList.remove('open')
 })
 
+// --------------------------------------------------------------------------------------------------------
+// btn-up
+let btnUp = document.getElementById('btn-up')
+
+window.onscroll = function() {
+    if (window.scrollY >= 100) {
+        btnUp.style.display = 'block'
+    }else {
+        btnUp.style.display = 'none'
+    }
+}
+btnUp.onclick = function() {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    })
+}
+
+
+
+
