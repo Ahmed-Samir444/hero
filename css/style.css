@@ -159,21 +159,35 @@ header .nav-list > li > a:hover{
     color: var(--s-c);
 }
 
-/* maga-meno */
-.maga-meno{
+/* drob-down */
+.drob-down{
     position: absolute;
-    width: fit-content;
     background-color: var(--f-c);
     top: 70px;
     width: 200px;
+    display: none;
+    transition: 0.3s;
   }
-.maga-meno ul li a{
+  @media (max-width: 991px) {
+    .drob-down{
+        top: 30px;
+    }
+  }
+.drob-down ul li a{
     color: var(--m-c);
     display: block;
     padding: 10px 35px;
     transition: 0.3s;
 }
-.maga-meno ul li a:hover {
+@media (max-width: 991px) {
+    .drob-down ul li a{
+        padding: 9px 12px;
+    }
+}
+nav ul > li:hover .drob-down {
+    display: block;
+}
+.drob-down ul li a:hover {
       background-color: var(--s-c);
       color: #fff;
 }
