@@ -64,6 +64,24 @@ span{
 .s-up-down{
     margin: 100px 0;
 }
+.section-header{
+    text-align: center;
+    width: 80%;
+    margin: 100px auto;
+}
+@media (max-width: 767px) {
+    .section-header{
+        width: 100%;
+    }
+}
+.section-header .section-header-title{
+    color: var(--f-c);
+    padding-bottom: 20px;
+}
+.section-header .section-header-desc{
+    color: #777;
+    line-height: 22px;
+}
 /*------------------------------------------------------------------------------------------*/
 /*header*/
 header{
@@ -350,6 +368,58 @@ nav ul > li:hover .drob-down {
     color: #777;
     line-height: 18px;
 }
+/* --------------------------------------------------------------------------------------------- */
+/* about */
+.about-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: 30px;
+}
+
+.about-content .about-item .about-img{
+    max-width: 100%;
+}
+@media (max-width: 767px) {
+    .about-content .about-item .about-img{
+        max-width: 60%;
+    }
+}
+
+.about-content .about-item .about-heading{
+    padding-bottom: 60px;
+}
+@media (max-width: 767px){
+    .about-content .about-item .about-heading{
+        max-width: 80%;
+    }
+}
+.about-content .about-item .about-heading .about-title{
+    color: var(--f-c);
+    line-height: 22px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* -------------------------------------------------------------------------------------------------- */
 /* btn-to-up */
 #btn-up{
