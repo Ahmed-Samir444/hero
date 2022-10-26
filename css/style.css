@@ -237,6 +237,7 @@ nav ul > li:hover .drob-down {
 @media (max-width: 767px) {
     .landing  .landing-content{
         top: 50%;
+        width: 50%;
     }
 }
 
@@ -246,11 +247,11 @@ nav ul > li:hover .drob-down {
 }
 @media (max-width: 767px) {
     .landing .landing-img{
-        /* display: none; */
         width: 160px;
         top: 10px;
     }
 }
+
 .landing .landing-img img{
     position: relative;
     max-width: 80%;
@@ -264,7 +265,7 @@ nav ul > li:hover .drob-down {
 
 @media (max-width: 767px) {
     .landing .landing-content .landing-info {
-        width: 250px;
+        width: 189px;
     }
 }
 
@@ -276,7 +277,7 @@ nav ul > li:hover .drob-down {
 
 @media (max-width: 767px) {
     .landing .landing-content .landing-info .landing-title{
-        font-size: 20px;
+        font-size: 21px;
     }
 }
 
@@ -292,7 +293,7 @@ nav ul > li:hover .drob-down {
 }
 @media (max-width: 767px) {
     .landing .landing-content .landing-info .landing-desc{
-        font-size: 12px;
+        font-size: 16px;
         line-height: 15px;
         margin: 0;
     }
@@ -376,12 +377,18 @@ nav ul > li:hover .drob-down {
     gap: 30px;
 }
 
+@media (max-width: 767px) {
+    .about-content {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }
+}
+
 .about-content .about-item .about-img{
     max-width: 100%;
-}
+ }
 @media (max-width: 767px) {
     .about-content .about-item .about-img{
-        max-width: 60%;
+        max-width: 80%;
     }
 }
 
@@ -398,14 +405,50 @@ nav ul > li:hover .drob-down {
     line-height: 22px;
 }
 
+.about-content .about-item .about-tap{
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
 
+.about-content .about-item .about-tap li{
+    padding: 0 30px;
+    cursor: pointer;
+    font-size: 25px;
+}
 
+@media (max-width: 767px){
+    .about-content .about-item .about-tap li{
+        padding: 0 20px;
+        font-size: 15px;
+    }
+}
 
+.about-content .about-item .about-tap li.about-active{
+     color: var(--m-c);
+}
 
+.about-content .about-item .tap-info{
+    margin-bottom: 30px;
+}
 
+.about-content .about-item .tap-info .tap-info-desc{
+    color: var(--f-c);
+    line-height: 1.5;
+}
+.about-content .about-item .about-det .tap-with{
+    margin: 35px 0;
+}
 
+.about-content .about-item .about-det .tap-with .tap-with-title{
+    padding-bottom: 10px;
+    color: var(--f-c);
+}
 
-
+.about-content .about-item .about-det .tap-with .tap-with-desc{
+    color: #777;
+    line-height: 1.5;
+}
 
 
 
