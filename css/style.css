@@ -449,7 +449,21 @@ nav ul > li:hover .drob-down {
     color: #777;
     line-height: 1.5;
 }
-
+/* ------------------------------------------------------------------------------------------------------- */
+/* clients */
+.clients .clients-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    gap: 45px;
+}
+.clients .clients-content .clients-item img{
+    max-width: 100%;
+    filter: grayscale(100%);
+    transition: .3s;
+}
+.clients .clients-content .clients-item img:hover{
+    filter: grayscale(0);
+}
 
 
 

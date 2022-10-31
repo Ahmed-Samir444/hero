@@ -34,7 +34,25 @@ btnUp.onclick = function() {
         behavior: "smooth"
     })
 }
+// ----------------------------------------------------------------------------------------------------------
+// about tap
+let aboutTap = document.querySelectorAll('.about-tap li');
+let aboutTapArr = Array.from(aboutTap)
 
+let aboutDet = document.querySelectorAll('.about-det > div')
+let aboutDetArr = Array.from(aboutDet)
 
+aboutTapArr.forEach((li) => {
+    li.addEventListener('click', (e) => {
+        aboutTapArr.forEach((li) => {
+            li.classList.remove('about-active')
+        })
+        e.currentTarget.classList.add('about-active')
+        aboutDetArr.forEach((div) => {
+            div.style.display = 'none'
+        })
+        document.querySelector(e.currentTarget.dataset.cont).style.display = 'block'
+    })
+})
 
 
