@@ -24,6 +24,7 @@ let btnUp = document.getElementById('btn-up')
 window.onscroll = function() {
     if (window.scrollY >= 100) {
         btnUp.style.display = 'block'
+        
     }else {
         btnUp.style.display = 'none'
     }
@@ -54,5 +55,56 @@ aboutTapArr.forEach((li) => {
         document.querySelector(e.currentTarget.dataset.cont).style.display = 'block'
     })
 })
+// ------------------------------------------------------------------------------------------------------
+// features
+
+let featuresContent = document.querySelectorAll('.features-content > div')
+
+let featuresContentArr = Array.from(featuresContent)
+
+let featuresInfo = document.querySelectorAll('.features-info > div')
+
+let featuresInfoArr = Array.from(featuresInfo)
+
+featuresContentArr.forEach((div) =>{
+    div.addEventListener('click', (ele) =>{
+        featuresContentArr.forEach((div) =>{
+            div.classList.remove('features-active')
+        })
+        ele.currentTarget.classList.add('features-active')
+        featuresInfoArr.forEach((div) => {
+            div.style.display = 'none'
+        })
+        document.querySelector(ele.currentTarget.dataset.fea).style.display = 'flex'
+
+    })
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 

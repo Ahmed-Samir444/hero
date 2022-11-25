@@ -699,14 +699,15 @@ nav ul > li:hover .drob-down {
     color: var(--t-c);
 }
 
-.features .features-info{
+.features .features-info > div{
     display: flex;
     justify-content: space-between;
      width: 100%;
+     display: none;
 }
 
 @media (max-width: 767px){
-    .features .features-info{
+    .features .features-info > div{
         flex-direction: column;
     }
 }
