@@ -706,6 +706,7 @@ nav ul > li:hover .drob-down {
      display: none;
 }
 
+
 @media (max-width: 767px){
     .features .features-info > div{
         flex-direction: column;
@@ -732,20 +733,50 @@ nav ul > li:hover .drob-down {
         width: 290px;
     }
 }
+/* ------------------------------------------------------------------------------------------------------ */
+/* services */
+.services-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 40px;
+}
+@media (max-width: 767px) {
+    .services-content{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 40px;
+    }
+}
 
+.services-content .services-img{
+    position: relative;
+}
 
+.services-content .services-img img{
+    max-width: 100%;
+    border-radius: 20px;
+}
 
+.services-content .services-item .services-inf{
+    text-align: center;
+}
 
+.services-content .services-item .services-inf .services-title{
+    padding: 20px 0;
+}
 
+.services-content .services-item .services-inf .services-desc{
+    color: #777;
+    line-height: 1.6;
+} 
 
+.services-content .services-item:hover .services-title{
+    color: var(--m-c);
+}
 
-
-
-
-
-
-
-
+.services-content .services-item:hover .services-desc{
+    color: var(--f-c);
+}
 
 /* -------------------------------------------------------------------------------------------------- */
 /* btn-to-up */
