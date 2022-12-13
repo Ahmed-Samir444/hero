@@ -20,6 +20,10 @@
     text-transform: capitalize;
 }
 
+body{
+    font-size: 10px;
+}
+
 .btn:hover{
     background-color: var(--s-c);
 }
@@ -78,6 +82,7 @@ span{
     --s-c: #0EA2BD;
     --t-c: #ECEEEF;
     --f-c: #485664;
+    --g-c: #777
 }
 .s-up-down{
     margin: 100px 0;
@@ -86,6 +91,7 @@ span{
     text-align: center;
     width: 80%;
     margin: 100px auto;
+    font-size: 1rem;
 }
 @media (max-width: 767px) {
     .section-header{
@@ -97,7 +103,7 @@ span{
     padding-bottom: 20px;
 }
 .section-header .section-header-desc{
-    color: #777;
+    color: var(--g-c);
     line-height: 22px;
 }
 /*------------------------------------------------------------------------------------------*/
@@ -119,7 +125,7 @@ header .container{
 }
 
 header .header-title{
-    font-size: 30px;
+    font-size: 3rem;
     color: var(--f-c);
 }
 
@@ -132,7 +138,7 @@ header nav{
 
 header nav .toggle{
     color: var(--f-c);
-    font-size: 22px;
+    font-size: 2.2rem;
 }
 
 
@@ -174,7 +180,7 @@ header .nav-list{
         display: flex;
         height: 40px;
         width: 40px;
-        font-size: 27px;
+        font-size: 2rem;
         color: var(--m-c)
 
 
@@ -185,7 +191,7 @@ header .nav-list > li > a{
     padding: 40px 15px;
     display: block;
     color: var(--f-c);
-    font-size: 18px;
+    font-size: 1.2rem;
     transition: 0.3s;
 }
 
@@ -288,14 +294,14 @@ nav ul > li:hover .drob-down {
 }
 
 .landing .landing-content .landing-info .landing-title{
-    font-size: 30px;
+    font-size: 3rem;
     color: var(--f-c);
     padding-bottom: 20px;
 }
 
 @media (max-width: 767px) {
     .landing .landing-content .landing-info .landing-title{
-        font-size: 21px;
+        font-size: 2rem;
     }
 }
 
@@ -304,14 +310,14 @@ nav ul > li:hover .drob-down {
 }
 
 .landing .landing-content .landing-info .landing-desc{
-    font-size: 18px;
+    font-size: 1.2rem;
     color: var(--f-c);
     font-weight: bold;
     padding-bottom: 20px;
 }
 @media (max-width: 767px) {
     .landing .landing-content .landing-info .landing-desc{
-        font-size: 16px;
+        font-size: 1.2;
         line-height: 15px;
         margin: 0;
     }
@@ -361,12 +367,13 @@ nav ul > li:hover .drob-down {
 
 .boxs-content .boxs-item i{
     color: var(--m-c);
-    font-size: 30px;
+    font-size: 3rem;
 }
 
 .boxs-content .boxs-item .boxs-title{
     color: var(--f-c);
     padding: 15px 0;
+    font-size: 1rem;
 }
 
 .boxs-content .boxs-item:hover .boxs-title{
@@ -374,8 +381,9 @@ nav ul > li:hover .drob-down {
 }
 
 .boxs-content .boxs-item .boxs-desc{
-    color: #777;
+    color: var(--g-c);
     line-height: 18px;
+    font-size: 1rem;
 }
 /* --------------------------------------------------------------------------------------------- */
 /* about */
@@ -411,6 +419,7 @@ nav ul > li:hover .drob-down {
 .about-content .about-item .about-heading .about-title{
     color: var(--f-c);
     line-height: 22px;
+    font-size: 1rem;
 }
 
 .about-content .about-item .about-tap{
@@ -422,13 +431,13 @@ nav ul > li:hover .drob-down {
 .about-content .about-item .about-tap li{
     padding: 0 30px;
     cursor: pointer;
-    font-size: 25px;
+    font-size: 2rem;
 }
 
 @media (max-width: 767px){
     .about-content .about-item .about-tap li{
         padding: 0 20px;
-        font-size: 15px;
+        font-size: .9rem;
     }
 }
 
@@ -443,6 +452,7 @@ nav ul > li:hover .drob-down {
 .about-content .about-item .tap-info .tap-info-desc{
     color: var(--f-c);
     line-height: 1.5;
+    font-size: 1rem;
 }
 .about-content .about-item .about-det .tap-with{
     margin: 35px 0;
@@ -451,11 +461,13 @@ nav ul > li:hover .drob-down {
 .about-content .about-item .about-det .tap-with .tap-with-title{
     padding-bottom: 10px;
     color: var(--f-c);
+    font-size: 1.2rem;
 }
 
 .about-content .about-item .about-det .tap-with .tap-with-desc{
-    color: #777;
+    color: var(--g-c);
     line-height: 1.5;
+    font-size: 1rem;
 }
 /* ------------------------------------------------------------------------------------------------------- */
 /* clients */
@@ -719,7 +731,7 @@ nav ul > li:hover .drob-down {
 }
 
 .features .features-info .features-info-dit .features-info-desc{
-    color: #777;
+    color: var(--g-c);
     line-height: 1.6;
     width: 80%;
 }
@@ -766,7 +778,7 @@ nav ul > li:hover .drob-down {
 }
 
 .services-content .services-item .services-inf .services-desc{
-    color: #777;
+    color: var(--g-c);
     line-height: 1.6;
 } 
 
